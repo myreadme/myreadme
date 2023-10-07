@@ -1,13 +1,110 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titel der Seite | Name der Website</title>
-  </head>
-  <body>
-    <!-- Sichtbarer Dokumentinhalt im body -->
-    <p>Sehen Sie sich den Quellcode dieser Seite an.
-      <kbd>(Kontextmenu: Seitenquelltext anzeigen)</kbd></p>
-  </body>
+<html>
+<head>
+    <link rel="stylesheet" href="TELETEXT.CSS">
+    <meta charset="UTF-8">
+    <title>ReadMe - Initative für Kulturinformatik und Netzpolitik</title>
+
+
+ <!--Zeitgefrickel-->
+ <script type="text/javascript" language="JavaScript">
+    <!--
+    var initTeletext = function() {
+        window.setInterval(updateClock, 1000);
+        window.setTimeout(updateCounter, 100);
+    }
+    var addleadingspace = function(number) {
+        return (number < 10 ? " " : "") + number; 
+    }
+    var addleadingzero = function(number) {
+        return (number < 10 ? "0" : "") + number; 
+    }
+    var dayofweek = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"]
+    var monthname = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
+    var updateClock = function() {
+        var d = new Date();
+        document.getElementById("TTdate").innerHTML = dayofweek[d.getDay()] + " " + addleadingspace(d.getDate()) + " " + monthname[d.getMonth()];
+        document.getElementById("TTtime").innerHTML = addleadingzero(d.getHours()) + ":" + addleadingzero(d.getMinutes()) + "/" + addleadingzero(d.getSeconds());
+    }
+    var counter=100;
+    var updateCounter = function() {
+        document.getElementById("TTcounter").innerHTML = counter;
+        counter +=1;
+        if (counter > 199) {
+            counter = 100;
+        }  
+        if (Math.random() < 0.05) {
+            window.setTimeout(updateCounter, 1000 + Math.random()*3000);    
+        } else {
+            window.setTimeout(updateCounter, 100);    
+        }
+    }
+    window.onload = initTeletext;
+    </script>
+</head>
+
+<!-- Header -->
+<header>
+
+    <p class="teletext"><div class="teletext">
+        P100  <span class="red">Time <span class="green" id="TTcounter">100</span> <span id="TTdate">Mon  1 Jan</span></span> <span class="yellow">            <span id="TTtime">00:00/00</span></span></div></p>
+    <br>
+    <!-- Überschrift-NOPIC-Gefrickel -->
+    <div class="teletext">                                              
+        <span class="red">&#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2ff;  &#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;  &#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2ff;  &#xe2cf;&#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2ff;  </span><span class="green">&#xe2ff;&#xe2cf;&#xe2cf;&#xe2ff;&#xe2cf;&#xe2cf;&#xe2ff;  &#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf; </span>
+        <span class="green"></span><span class="red">&#xe2ff;    &#xe2ff;  &#xe2ff;      &#xe2ff;    &#xe2ff;   &#xe2ff;   &#xe2ff;  </span><span class="green">&#xe2ff;  &#xe2ff;  &#xe2ff;  &#xe2ff;     </span>
+        <span class="green"></span><span class="red">&#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2f0;  &#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c5;  &#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2ff;   &#xe2ff;   &#xe2ff;  </span><span class="green">&#xe2ff;  &#xe2ff;  &#xe2ff;  &#xe2ff;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2c5; </span>
+        <span class="green"></span><span class="red">&#xe2ff;    &#xe2ff;  &#xe2ff;      &#xe2ff;    &#xe2ff;   &#xe2ff;   &#xe2ff;  </span><span class="green">&#xe2ff;  &#xe2ff;  &#xe2ff;  &#xe2ff;     </span>
+        <span class="green"></span><span class="red">&#xe2cf;    &#xe2cf;  &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;  &#xe2cf;    &#xe2cf;  &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;  </span><span class="green">&#xe2cf;  &#xe2cf;  &#xe2cf;  &#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf;&#xe2cf; </span>
+        </div>
+    <h4 class="teletext">
+        Kulturinformatik und Netzpolitik Initative</h4>
+    <hr>
+</header>
+
+<!-- Navigationsbereich-->
+<nav>
+<a href="XXX" class="red">Home</a>   <!-- -->   <a href="#end" class="green">XXX</a>    <!-- -->  <a href="STATIC.HTM" class="yellow">XXX</a>  <!-- -->   <a href="leonard.b.damhorst@stud.leuphana.de" class="cyan">Contact</a>  <!-- -->
+
+</nav>
+
+<!-- Body -->
+<body>
+
+<h3>Treffen im Wintersemester 2023/24</h3>
+<br>
+<h6>1. Treffen</h6>
+<h4>Alles ist Eins. Ausser der 0.</h4>
+<h5 class="green">17.20.23 19:00 C5.326</h5>
+<p>Wir wollen gemeinsam den Film <a href="https://allesisteins.film">„Alles ist Eins. Ausser der 0.”</a> schauen und dabei leckeren <a href="https://www.kochwiki.org/wiki/Tschunk">Tschunk</a> trinken. Der Film erzaehlt die Geschichte des legendären CCCs, dem „Chaos Computer Clubs”, Deutschlands ältestem Hackerclub, dem auch einige Mitglieder der Initative verbunden sind. Passend dazu gibt es Tschunk, der besonders viel unter Hackern getrunken wird (auch alkoholfrei).</p>
+
+
+ 
+
+</body>
+
+<!-- Footer -->
+<footer>
+    <br>
+    <br>
+    <div class="teletext">                <span class="red">&#xe238;</span>&#xe21e;<span class="blue">&#xe23f;</span><span class="red">&#xe205;</span>
+        <span class="red">       &#xe23a;&#xe23f;&#xe23f;</span><span class="blue">&#xe21f;&#xe215;</span>
+        <span class="blue">     </span><span class="red">&#xe220;&#xe23a;&#xe23f;&#xe23f;&#xe23f;&#xe23d; </span>
+        <span class="red">     </span><span class="yellow">&#xe23a;&#xe23f;&#xe23f;</span><span class="red">&#xe23f;</span><span class="yellow">&#xe23f;</span><span class="red">&#xe23f;&#xe214;</span>
+        <span class="red">     </span><span class="yellow">&#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe23f;&#xe205;</span>
+        <span class="yellow">    </span><span class="blue">&#xe228;&#xe23f;</span><span class="yellow">&#xe23f;&#xe23f;&#xe23f;&#xe21f;&#xe201; </span>
+        <span class="yellow">    </span><span class="blue">&#xe23e;&#xe23f;&#xe23f;&#xe23f;&#xe21f;   </span>
+        <span class="blue">    &#xe23f;&#xe23f;&#xe23f;&#xe207;    </span>
+        <span class="blue">   &#xe202;&#xe23e;</span><span class="red">&#xe23f;&#xe21f;     </span>
+        <span class="red">    &#xe23f;&#xe23f;</span><span class="blue">&#xe215;     </span>
+        <span class="blue">  </span><span class="red">&#xe220;&#xe23e;&#xe23f;</span><span class="blue">&#xe23f;      </span>
+        <span class="blue">  </span><span class="red">&#xe22a;&#xe23f;&#xe23f;</span><span class="blue">&#xe217;      </span>
+        <span class="blue">  </span><span class="red">&#xe22a;</span><span class="blue">&#xe23f;&#xe20f;       </span>
+        <span class="blue"> </span><span class="red">&#xe22b;</span><span class="blue">&#xe21f;&#xe201;        </span>
+        <span class="blue"> &#xe23f;&#xe205;         </span>
+        <span class="blue">&#xe228;&#xe205;          </span>
+        <span class="blue">&#xe206;           </span>
+        </div>
+</footer>
 </html>
+
