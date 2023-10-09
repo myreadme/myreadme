@@ -111,6 +111,7 @@ body, td.teletext {
 body {
     border-width: 20px 20px 20px 20px; /* t r b l */
     padding: 20px;
+
 }
 
 .teletext {
@@ -125,4 +126,13 @@ body {
 /* My Changes */
 p {
     font-size: 12px;
-} 
+    max-width: 705px;
+
+}
+
+
+
+hr {
+    max-width: 705px;
+    margin: 0;
+}
