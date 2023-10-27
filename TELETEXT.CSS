@@ -125,6 +125,8 @@
   p {
       font-size: 12px;
       max-width: 705px;
+      margin-top: 12px;
+      margin-bottom: 12px;
   }
   
   hr {
@@ -134,4 +136,6 @@
   
 h1, h2 {
   line-height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
