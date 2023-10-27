@@ -103,6 +103,9 @@
       line-height: 20px;
       display: flex;
       flex-direction: column; /* Hier wird Flexbox verwendet */
+      margin: 0 auto;
+      width: 46ch;
+      overflow-x: hidden;
   }
   
   body {
