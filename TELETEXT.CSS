@@ -112,12 +112,13 @@
       flex-direction: column; /* Hier wird Flexbox verwendet */
   }
   
-  .teletext {
+  .teletext, .teletext * {
       text-align: left;
       white-space: pre;
       font-size: 20px;
       font-smooth: never;
       -webkit-font-smoothing: none;
+      font-weight: normal;
   }
   
   /* My Changes */
